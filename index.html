@@ -1,56 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage landing page</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <input type="checkbox" id="checkbox_menu" class="checkbox"/>
+    <header class="header">
+      <div class="header_container container">
+        <h1 class="header_heading">
+          <a class="header_logo" href="/manage">
+            <img class="logo_image" src="./images/logo.svg" alt="Logo">  
+          </a>
+        </h1>
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+        <label class="header_menu" for="checkbox_menu">Open menu</label>
 
-		<title>Manage landing page</title>
+        <nav class="header_navigation">
+          <ul class="header_list">
+            <li class="header_list--item">
+              <a class="menu-link" href="/pricing">Pricing</a>
+            </li>
+            <li class="header_list--item">
+              <a class="menu-link" href="/product">Product</a>
+            </li>
+            <li class="header_list--item">
+              <a class="menu-link" href="/about-us">About us</a>
+            </li>
+            <li class="header_list--item">
+              <a class="menu-link" href="/careers">Careers</a>
+            </li>
+            <li class="header_list--item">
+              <a class="menu-link" href="/community">Community</a>
+            </li>
+          </ul>
+        </nav>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-	</head>
-	<body>
-		Pricing Product About Us Careers Community Get Started Bring everyone
-		together to build better products. Manage makes it simple for software teams
-		to plan day-to-day tasks while keeping the larger team goals in view. Get
-		Started What’s different about Manage? Manage provides all the functionality
-		your team needs, without the complexity. Our software is tailor-made for
-		modern digital product teams. 01 Track company-wide progress See how your
-		day-to-day tasks fit into the wider vision. Go from tracking progress at the
-		milestone level all the way done to the smallest of details. Never lose
-		sight of the bigger picture again. 02 Advanced built-in reports Set internal
-		delivery estimates and track progress toward company goals. Our customisable
-		dashboard helps you build out the reports you need to keep key stakeholders
-		informed. 03 Everything you need in one place Stop jumping from one service
-		to another to communicate, store files, track tasks and share documents.
-		Manage offers an all-in-one team productivity solution. What they’ve said
-		Anisha Li “Manage has supercharged our team’s workflow. The ability to
-		maintain visibility on larger milestones at all times keeps everyone
-		motivated.” Ali Bravo “We have been able to cancel so many other
-		subscriptions since using Manage. There is no more cross-channel confusion
-		and everyone is much more focused.” Richard Watts “Manage allows us to
-		provide structure and process. It keeps us organized and focused. I can’t
-		stop recommending them to everyone I talk to!” Shanai Gough “Their software
-		allows us to track, manage and collaborate on our projects from anywhere. It
-		keeps the whole team in-sync without being intrusive.” Get Started Simplify
-		how your team works today. Get Started Home Pricing Products About Us
-		Careers Community Privacy Policy Updates in your inbox… Go Copyright 2020.
-		All Rights Reserved
-	</body>
+        <button class="get_started-btn">Get Started</button>
+      </div>
+    </header>
+
+    <main>
+      <article class="product">
+        <div class="product_container container">      
+          <div class="product_sample">
+            <img class="product_image" src="./images/illustration-intro.svg" alt="Illustratuin">
+          </div>
+          <section class="product_desc">
+            <h2 class="product_heading">
+              Bring everyone together to build better products
+            </h2>
+            <p class="product_text">
+              Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+            </p>
+            <div class="product_start">
+              <button class="get_started-btn product_btn">Get Started</button>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="manage">
+        <div class="manage_container container">
+          <section class="manage_heading">
+            <h3 class="manage_title">
+              What’s different about Manage?
+            </h3>
+            <p class="manage_desc">
+              Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+            </p>
+          </section>
+
+          <section class="manage_functionality">
+            <ul class="functionality">
+              <li class="functionality_time">
+                <h4 class="functionality_name">
+                  <span class="functionality_range">01</span>
+                  <span class="functionality_title">
+                    Track company-wide progress
+                  </span>
+                </h4>
+                <p class="functionality_desc">
+                  See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the		milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                </p>
+              </li>
+              <li class="functionality_time">
+                <h4 class="functionality_name">
+                  <span class="functionality_range">
+                    02
+                  </span>
+                  <span class="functionality_title">
+                    Advanced built-in reports
+                  </span>
+                </h4>
+                <p class="functionality_desc">
+                  Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+                </p>
+              </li>
+              <li class="functionality_time">
+                <h4 class="functionality_name">
+                  <span class="functionality_range">03</span>
+                  <span class="functionality_title">
+                    Everything you need in one place
+                  </span>
+                </h4>
+                <p class="functionality_desc">
+                  Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <article class="quotes">
+        <div class="quotes_container container">
+          <h2 class="quotes_heading">What they’ve said</h2>
+          <ul class="quotes_list">
+            <li class="author">
+              <img class="author_profile" src="./images/avatar-anisha.png" alt="Anisha Li">
+              <div class="author_name">Anisha Li</div>
+              <p class="author_quote">
+                <q>Manage has super charged our team’s workflow. The ability tomaintain visibility on larger milestones at all times keeps everyone motivated.</q>
+              </p>
+            </li>
+            <li class="author">
+              <img class="author_profile" src="./images/avatar-ali.png" alt="Ali Bravo">
+              <div class="author_name">Ali Bravo</div>
+              <p class="author_quote">
+                <q>
+                  We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.
+                </q>
+              </p>
+            </li>
+            <li class="author">
+              <img class="author_profile" src="./images/avatar-richard.png" alt="Richard Watts">
+              <div class="author_name">Richard Watts</div>
+              <p class="author_quote">
+                <q>
+                  Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!
+                </q>
+              </p>
+            </li>
+          </ul>
+          <div class="product_start ready_btn">
+            <button class="get_started-btn product_btn">Get Started</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="team-work">
+        <div class="team-work_container container">
+          <h2 class="team-work_heading">
+            Simplify how your team works today.
+          </h2>
+          <div class="product_start team-work_btn">
+            <button class="get_started-btn product_btn ready-team_btn">Get Started</button>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container container">
+        <form class="footer_form">
+          <input class="form_input" type="text" placeholder="Updates in your inbox..."/>
+          <button class="form_btn">Go</button>
+        </form>
+
+        <nav class="footer_navigation">
+          <ul class="footer_list">
+            <li class="footer_list--item">
+              <a class="footer-link" href="/">Home</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/careers">Careers</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/pricing">Pricing</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/community">Community</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/product">Product</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li class="footer_list--item">
+              <a class="footer-link" href="/about-us">About us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div footer="footer_communication">
+          <ul class="media">
+            <li class="media_list">
+              <a class="media_link" href="/facebook">
+                <img class="media_icon" src="./images/icon-facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="media_list">
+              <a class="media_link" href="/youtube">
+                <img class="media_icon" src="./images/icon-youtube.svg" alt="Youtube">
+              </a>
+            </li>
+            <li class="media_list">
+              <a class="media_link" href="/twitter">
+                <img class="media_icon" src="./images/icon-twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="media_list">
+              <a class="media_link" href="/pinterest">
+                <img class="media_icon" src="./images/icon-pinterest.svg" alt="Pinterest">
+              </a>
+            </li>
+            <li class="media_list">
+              <a class="media_link" href="/instagram">
+                <img class="media_icon" src="./images/icon-instagram.svg" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer_heading">
+            <a class="footer_logo" href="/manage">
+              <img class="logo_image footer_logo" src="./images/footer-logo.svg" alt="Logo">  
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

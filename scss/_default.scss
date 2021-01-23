@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+.checkbox {
+    display: none;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.get_started-btn {
+    display: none;
+    border: none;
+    background: hsl(12, 88%, 59%);
+    color: #fff;
+    font-size: 10px;
+    padding: 0px 17px;
+    border-radius: 31px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    opacity: 0.5;
+}
+
+@media (min-width: 375px) {
+    .get_started-btn {
+        display: block;
+    }
+}

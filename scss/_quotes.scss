@@ -1,0 +1,45 @@
+.quotes_heading {
+    font-size: 38px;
+    margin-top: 0;
+    padding-bottom: 3rem;
+}
+
+.author {
+    background-color: hsl(0, 0%, 98%);
+    padding: 1rem;
+    padding-top: 4rem;
+    position: relative;
+}
+
+.author_profile {
+    width: 60px;
+    position: absolute;
+    top: -25px;
+    left: 42%;
+}
+
+.author:nth-of-type(1),
+.author:nth-of-type(3) {
+    display: none;
+}
+
+.ready_btn {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 375px) {
+    .author:nth-of-type(1),
+    .author:nth-of-type(3) {
+        display: block;
+    }
+
+    .author_profile {
+        left: 50%;
+    }
+
+    .quotes_list {
+        display: flex;
+        gap: 20px;
+    }
+}

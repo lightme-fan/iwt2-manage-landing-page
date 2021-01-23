@@ -1,0 +1,42 @@
+
+.team-work {
+    background-color: hsl(12, 88%, 59%);
+    margin-top: 1rem;
+}
+
+.team-work_heading {
+    margin: 0;
+    color: #fff;
+    font-size: 38px;
+    padding: 1rem;
+}
+
+.team-work_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.ready-team_btn {
+    background: #fff;
+    color: hsl(12, 88%, 59%);
+}
+
+@media (min-width: 375px) {
+    .team-work_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-work_heading {
+        text-align: start;
+    }
+
+    .team-work_btn {
+        justify-content: flex-end;
+    }
+
+    .ready-team_btn {
+        height: 44px;
+        align-self: center;
+    }
+}

@@ -1,0 +1,37 @@
+// List
+@mixin reset-list($padding: 0, $margin: 0, $style: none) {
+  margin: $margin;
+  padding: $padding;
+  list-style: $style;
+}
+
+// Display flex
+@mixin displayFlex($display: flex, $direction: row, $justifyContent: space-between) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+}
+
+// Default display grid
+@mixin displayGrid($display: grid, $grid-template-colums: 1fr 1fr, $gap: 20px) {
+  display: $display;
+  grid-template-columns: $grid-template-colums;
+  gap: $gap;
+}
+
+// Mixing for container
+@mixin container($width: 1114px, $left-space: auto, $right-space: auto) {
+  max-width: $width;
+  margin-left: $left-space;
+  margin-right: $right-space;
+}
+
+// backgroung mixing
+@mixin background($imgPath, $position:50% 50%, $repeat: no-repeat, $size: cover) {
+  background: {
+      image: url($imgPath);
+      position: $position;
+      repeat: $repeat;
+      size: $size
+  }
+}
