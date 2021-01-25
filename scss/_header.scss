@@ -1,5 +1,9 @@
 @import 'variables/mixin';
 
+.header {
+    background-color: transparent;
+}
+
 .header_container {
     position: relative;
     display: flex;
@@ -22,6 +26,7 @@
 .header_menu {
     @include background('../images/icon-open.svg');
     background-size: 25px;
+    background-position: 100% 50%;
     color: transparent;
     cursor: pointer;
 }
@@ -55,14 +60,20 @@ input[type="checkbox"]:checked ~ .header .header_navigation {
   z-index: 2;
 }
 
-input[type="checkbox"]:checked ~ body {
+input[type="checkbox"]:checked ~ main,
+input[type="checkbox"]:checked ~ footer {
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"]:checked ~ header {
+    background: rgba(0, 0, 0, 0.2);
 }
 
 input[type="checkbox"]:checked ~ .header .header_container .header_menu {
   @include background('../images/icon-close.svg');
     background-size: 25px;
+    background-position: 100% 50%;
     cursor: pointer;
 }
 

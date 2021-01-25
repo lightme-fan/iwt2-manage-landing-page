@@ -1,6 +1,9 @@
+@import 'variables/mixin';
+
 body {
     text-align: center;
     margin: 0;
+    @include background('../images/bg-simplify-section-mobile.svg');
 }
 
 .checkbox {
