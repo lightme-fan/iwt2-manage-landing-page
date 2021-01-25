@@ -1,7 +1,9 @@
 @import 'variables/mixin';
+@import 'fonts';
 
 body {
     text-align: center;
+    font-family: 'Public Sans';
     margin: 0;
     @include background('../images/bg-simplify-section-mobile.svg');
 }
@@ -41,6 +43,7 @@ img {
 
 p {
     opacity: 0.5;
+    font-size: 14px;
 }
 
 @media (min-width: 375px) {
