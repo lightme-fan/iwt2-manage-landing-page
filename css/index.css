@@ -30,10 +30,10 @@ body {
   text-align: center;
   font-family: 'Public Sans';
   margin: 0;
-  background-image: url("../images/bg-simplify-section-mobile.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 133%, 98%;
+  background-position: 62px -6%, 209px 23%; }
 
 .checkbox {
   display: none; }
@@ -67,6 +67,11 @@ p {
   font-size: 14px; }
 
 @media (min-width: 375px) {
+  body {
+    background-image: url(../images/bg-tablet-pattern.svg), url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 55%;
+    background-position: 584px -5%, -306px 61%; }
   .get_started-btn {
     display: block; } }
 
